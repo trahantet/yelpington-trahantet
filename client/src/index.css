@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title-bar{
+text-align: center;
+color: rebeccapurple;
+}
+
+#browser{
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+
+}
+
+#spacer{
+  height: 80vh; 
+  width:40vw;
+  border: 1px solid black;
+}
+.map{
+  height: 80vh; 
+  width:40vw;
+}
+
+#map-container{
+  width: 40vw;
+  /* margin-left: 30px; */
+}
+
+#main-list{
+  display: inline-block;
+  /* margin-left:900px */
+}
