@@ -21,7 +21,7 @@ useEffect(()  => {
     <div id="main-list">
       <ul>
         {restNames.map((title, index) => {
-          return <h3 key={index}><Link to={`/rest/${title}`}>{title.replaceAll('-', " ")}</Link></h3>
+          return <h3 key={index}><Link to={`/restaurant/${title}`}>{title.replaceAll('-', " ")}</Link></h3>
         })}
       </ul>
   

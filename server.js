@@ -12,7 +12,8 @@ app.get('/rest', (req, res) => {
 })
 
 app.get('/rest/:id', (req, res) => {
-  res.sendFile(path.resolve(`./api/${id.params.id}.json`))
+  res.sendFile(path.resolve(`./api/${req.params.id}.json`))
+  console.log(req.params.id)
 });
 
 app.get("*", (req, res) => {
