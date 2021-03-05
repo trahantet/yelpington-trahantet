@@ -10,7 +10,13 @@ app.use(express.static('./client/public'))
 app.get('/api', (req, res) => {
     res.sendFile(path.resolve('./api/directory.json'))
   });
- 
+
+
+  app.get('/bars/:id', (req, res) => {
+    res.sendFile(path.resolve('./api/' + req.params.id + ".json"))
+  } )
+
+
 
 // app.get('*', (req,res)) => 
 // res.sendFile(path.resolve(.'/client/public/index.html'))
