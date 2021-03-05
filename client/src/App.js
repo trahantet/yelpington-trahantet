@@ -1,10 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Map from "./components/Map";
+import { useState } from 'react';
+import L, { map} from 'leaflet';
+
 
 function App() {
+const [center, setCenter] = useState([43.88, -72.7317]);
+const [zoom, setZoom] = useState(8);
+
+
   return (
-    <h1>Yelpington</h1>
+    <div>
+      <h1>Yelpington</h1>
+
+      <Map center={center} zoom={zoom}/>
+    </div>
   );
 }
 
+
 export default App;
+
+//title on top, map,
