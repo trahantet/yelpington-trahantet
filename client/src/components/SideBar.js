@@ -1,7 +1,8 @@
 import React from "react";
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./style/App.css";
+
 
 export default function SideBar(props) {
   const [barNames, setBarNames] = useState([]);
@@ -16,7 +17,7 @@ export default function SideBar(props) {
     }
   });
   return (
-    <div>
+    <div id="SideBar">
       <h2> List of Bars</h2>
       {/* <h4>{barNames.name}</h4> */}
       {barNames.map((id, index) => {
