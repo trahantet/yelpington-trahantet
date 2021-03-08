@@ -13,12 +13,12 @@ import "leaflet/dist/leaflet.css";
 import "./style/App.css";
 import { Link } from "react-router-dom";
 import MyComponent from "./MyComponent";
-// import MyComponent from './MyComponent'
+// my component is sibling component to allow zoom
 
 export default function Map(props) {
   const [center, setCenter] = useState([44.4759, -73.2121]);
-
-
+//use state for default center
+//map settings
   return (
     <div id="Map">
       <MapContainer
@@ -100,3 +100,5 @@ export default function Map(props) {
     </div>
   );
 }
+//my component is sibling allowing for zoom change
+//markers and popups allow the map markers with the links to their page. so you can click to the left on the name, or to the right on the marker link. 

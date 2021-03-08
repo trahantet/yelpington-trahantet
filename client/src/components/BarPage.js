@@ -18,7 +18,7 @@ export default function BarPage(props) {
     lat: "",
     long: ""
   });
-
+//fetching bar info, passing thru zoom props and changing it to the lat and long from selected page
   useEffect(() => {
     if (theBar.id === "") {
       fetch(`/api/${props.match.params.id}`)
@@ -34,12 +34,8 @@ export default function BarPage(props) {
         });
     }
   });
-  //   fetch(`/api/honey-road`)
-  //   .then ((res) => res.json())
-  //   .then((selectBar) => {
-  //       console.log(selectBar)
-  //   });
-
+  
+//returning all info from specific bar json
   return (
     <div id="barInfo">
       <h2>{theBar.name}</h2>

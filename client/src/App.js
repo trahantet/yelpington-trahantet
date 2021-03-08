@@ -5,7 +5,9 @@ import L, { map } from "leaflet";
 import { Route, Switch, Link, Redirect } from "react-router-dom";
 import SideBar from "./components/SideBar";
 import BarPage from "./components/BarPage";
+//imports for everything
 
+//defining use states for maps
 function App() {
   const [center, setCenter] = useState([44.4759, -73.2121]);
   const [zoom, setZoom] = useState({
@@ -14,6 +16,7 @@ function App() {
     center: [44.4759, -73.2121],
   });
 
+  //switch routers, app.js is acting as home component. sidebar is selection of bars, bar page is individual bar info
   return (
     <div>
       <h1 id="header"> Yelpington</h1>
@@ -28,7 +31,7 @@ function App() {
           >
             <SideBar />
           </Route>
-
+{/* match query here and setting zoom to zoom into map once bar page is selected */}
           <Route
             path="/bars/:id"
             render={(props) => {
@@ -50,31 +53,8 @@ function App() {
     </div>
   );
 }
-
+//setting zoom and center default above
 export default App;
 
 //title on top, map,
 
-{
-  /* <Route
-          path="/bar/:id"
-          children={(props) => {
-            return
-             props.match.isExact ? (
-              <SideBar match={props.match} />
-            ) : (
-              <Redirect to="/bar/:id" />
-            );
-          }}
-        /> */
-}
-{
-  /* // render={({ match }) => <h1> {match.params.id || "none"}</h1>} */
-}
-
-{
-  /* <Route
-          path="*"
-          component={(props) => <NotFound match={props.match} />}
-        /> */
-}
