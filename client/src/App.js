@@ -17,36 +17,36 @@ function App() {
   return (
     <div>
       <h1 id="header"> Yelpington</h1>
-      <Map
-        center={center}
-        // zoom={zoom}
-        newZoom={zoom.zoomIn ? zoom.zoom : 13}
-        newCenter={zoom.zoomIn ? zoom.center : [44.4759, -73.2121]}
-      />
-      
-      <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => {
-            return <SideBar setZoom={setZoom} />;
-          }}
-        >
-          <SideBar />
-        </Route>
+      <div id="contentWrapper">
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => {
+              return <SideBar setZoom={setZoom} />;
+            }}
+          >
+            <SideBar />
+          </Route>
 
-        <Route
-          path="/bars/:id"
-          render={(props) => {
-            return props.match.isExact ? (
-              <BarPage match={props.match} setNewZoom={setZoom} />
-            ) : (
-              <Redirect to="/" />
-             
-            );
-          }}
+          <Route
+            path="/bars/:id"
+            render={(props) => {
+              return props.match.isExact ? (
+                <BarPage match={props.match} setNewZoom={setZoom} />
+              ) : (
+                <Redirect to="/" />
+              );
+            }}
+          />
+        </Switch>
+        <Map
+          center={center}
+          // zoom={zoom}
+          newZoom={zoom.zoomIn ? zoom.zoom : 13}
+          newCenter={zoom.zoomIn ? zoom.center : [44.4759, -73.2121]}
         />
-      </Switch>
+      </div>
     </div>
   );
 }

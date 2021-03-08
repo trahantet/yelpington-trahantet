@@ -41,12 +41,12 @@ export default function BarPage(props) {
   //   });
 
   return (
-    <div>
+    <div id="barInfo">
       <h2>{theBar.name}</h2>
       <h3>{theBar.phonenumber}</h3>
       <h3>{theBar.hours}</h3>
       <h3>{theBar.address}</h3>
-      <h3>{theBar.favoritedrink}</h3>
+      <h3>Best Drink: {theBar.favoritedrink}</h3>
     </div>
   );
 }

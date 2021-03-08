@@ -12,16 +12,11 @@ import {
 import "leaflet/dist/leaflet.css";
 import "./style/App.css";
 import { Link } from "react-router-dom";
-import MyComponent from './MyComponent'
+import MyComponent from "./MyComponent";
 // import MyComponent from './MyComponent'
 
-
-
-
-
-
 export default function Map(props) {
-const [center, setCenter] = useState([44.4759, -73.2121]);
+  const [center, setCenter] = useState([44.4759, -73.2121]);
 
 
   return (
@@ -101,8 +96,6 @@ const [center, setCenter] = useState([44.4759, -73.2121]);
             <Link to={`/bars/three-needs`}> </Link>
           </Popup>
         </Marker>
-
-
       </MapContainer>
     </div>
   );
