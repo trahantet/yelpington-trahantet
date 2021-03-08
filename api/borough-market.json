@@ -1,0 +1,13 @@
+{
+    "id": "borough-market",
+    "name": "Borough Market",
+    "address": "8 Southwark St, London SE1 1TL, United Kingdom",
+    "phone number": "+44 20 3490 1880",
+    "hours": "10:00 am - 5:00 pm",
+    "latitude": "51.505998000654344",
+    "longitude": "-0.09117757930533392",
+    "notes": [
+      "Home to St. Johns bakery!",
+      "Huge market with regional vendors."
+    ]
+  }

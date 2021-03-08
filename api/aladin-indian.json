@@ -1,0 +1,13 @@
+{
+    "id": "aladin-indian",
+    "name": "Indian Aladin",
+    "address": "132 Brick Ln, Spitalfields, London E1 6RU, United Kingdom",
+    "phone number": "+44 20 7247 8210",
+    "hours": "12:00 pm - 11:00 pm",
+    "latitude": "51.576799799999996",
+    "longitude": "-0.07173689999999999",
+    "notes": [
+      "Located in London's famous Brick Lane.",
+      "Amazing curry house with great prices."
+    ]
+  }

@@ -1,13 +1,13 @@
 {
     "id": "il-bordello",
     "name": "Il Bordello",
-    "address": "123 King St.",
-    "phone number": "555-1221",
-    "hours": "7:00 am - 3:00 pm",
-    "latitude": "44.476470",
-    "longitude": "-73.214290",
+    "address": "Metropolitan wharf, 70 Wapping Wall, Wapping, London E1W 3SS, United Kingdom",
+    "phone number": "+44 20 7481 9950",
+    "hours": "12:00 pm - 11:00 pm",
+    "latitude": "51.50665042583389",
+    "longitude": "-0.052600917369056394",
     "notes": [
-      "Their sriracha breakfast sandwich is quite good.",
-      "Every Thursday is meatloaf day."
+      "Amazing Authentic Italian",
+      "Great ambiance and services"
     ]
   }

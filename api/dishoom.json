@@ -1,0 +1,13 @@
+{
+    "id": "dishoom",
+    "name": "Dishoom",
+    "address": "7 Boundary St, Shoreditch, London E2 7JE, United Kingdom",
+    "phone number": "+44 20 7420 9324",
+    "hours": "9:00 am - 10:00 pm",
+    "latitude": "51.52439682268097",
+    "longitude": "-0.07734326941116289",
+    "notes": [
+      "Amazing Bombay style Indian fare.",
+      "Make sure to make a reservation or grab a drink while you wait."
+    ]
+  }

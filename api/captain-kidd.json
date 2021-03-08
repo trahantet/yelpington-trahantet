@@ -1,0 +1,13 @@
+{
+    "id": "captain-kidd",
+    "name": "Captain Kidd",
+    "address": "108 Wapping High St, Wapping, London E1W 2NE, United Kingdom",
+    "phone number": "+44 20 7480 5759",
+    "hours": "12:00 pm - 10:00 pm",
+    "latitude": "51.50327282268096",
+    "longitude": "-0.058297435298983166",
+    "notes": [
+      "A cozy Sam Smith pub.",
+      "Nautical themed pub with a great view of the Thames."
+    ]
+  }

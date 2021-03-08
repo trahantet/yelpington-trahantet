@@ -1,0 +1,13 @@
+{
+    "id": "new-cross-house",
+    "name": "New Cross House",
+    "address": "206 Evelyn St, Deptford, London SE8 5BZ, United Kingdom",
+    "phone number": "+44 20 869 48255",
+    "hours": "4:30 pm - 1:00 am",
+    "latitude": "51.4757069327405",
+    "longitude": "-0.036886290729891455",
+    "notes": [
+      "Great place to meet up with friends.",
+      "Grab a pint and a pizza for a great night."
+    ]
+  }
