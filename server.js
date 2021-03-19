@@ -5,7 +5,7 @@ const app = express();
 
 const port = process.env.PORT || 5000;
 
-app.use(express.static("./client/public"));
+app.use(express.static("./client/build"));
 
 // for all restaurants
 app.get('/api', (req, res) => {
@@ -21,7 +21,7 @@ app.get('/api/:id', (req, res) => {
 
 // catch all
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve("./client/public/index.html"));
+  res.sendFile(path.resolve("./client/build/index.html"));
 });
 
 app.listen(port, () => {
